@@ -62,14 +62,14 @@ h2 {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     z-index: 1000;
 }
 
 #header .header {
     min-height: 8vh;
-    background-color: var(--BODY-TEXT-COLOR);
+    background-color: rgba(32, 31, 31, 0.24);
 }
 
 #header .navbar {
@@ -87,7 +87,7 @@ h2 {
     background-color: #000000;
     width: 100vw;
     height: 100vh;
-    left: 0;
+    left: 100%;
     top: 0;
     display: flex;
     justify-content: center;
@@ -95,6 +95,10 @@ h2 {
     z-index: 1;
     overflow-x: hidden;
     flex-direction: column;
+}
+
+#header .navlist ul.active {
+    left: 0;
 }
 
 #header .navlist ul a {
@@ -108,6 +112,10 @@ h2 {
     display: block;
 } 
 
+#header .navlist ul a:hover {
+    color: var(--BUTTON-COLOR);
+}
+
 #header .mobilemenu {
     height: 60px;
     width: 60px;
@@ -120,6 +128,7 @@ h2 {
     align-items: center;
     z-index: 100;
     cursor: pointer;
+    margin: 10px;
 }
 
 #header .mobilemenu .box {
@@ -150,7 +159,42 @@ z-index: -1;
     bottom: 8px;
 }
 
+#header .mobilemenu.active .box {
+    background-color: transparent;
+}
 
+#header .mobilemenu.active .box::after {
+    top: 0;
+    transform: rotate(45deg);
+    
+}
+
+#header .mobilemenu.active .box::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    
+}
+
+/* #header .brandlogo a img {
+    width: 80%;
+} */
+
+
+#header .cta a {
+    font-family: var(--HEADING-FONT);
+    color: white;
+    border: 3px solid var(--BUTTON-COLOR);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: var(--BUTTON-COLOR);
+    font-weight: 500;
+    display: none;
+}
+
+#header .cta a:hover {
+    box-shadow: 5px 0px 5px 3px var(--BUTTON-COLOR);
+}
 /** End of Header Section **/
 
 

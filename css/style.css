@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /** Colors **/
+    --HEADING-COLOR : #0F172A;
+    --BODY-TEXT-COLOR: #D3D3D3;
+    --BUTTON-COLOR: #2563EB;
+    --ACCENT-COLOR: #22C55E;
+    --ADDIDTIONAL-COLOR: #FFFFFF;
+
+    /** Fonts **/
+    --HEADING-FONT: "Outfit, sans-serif";
+    --BODY-FONT: "Inter, sans-serif";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--BODY-FONT);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Hero Section **/
+#hero {
+    background-image: url(/assets/full-shot-man-doing.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+#hero .herocontent {
+    text-align: center;
+    color: var(--BODY-TEXT-COLOR);
+    padding: 1em;
+    font-size: 1rem;
+}
+
+#hero .herocontent h1 {
+    font-family: var(--HEADING-FONT);
+    font-size: 1.9rem;
+    padding-bottom: 0.2em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+#hero .herocontent p {
+    padding-bottom: 2em;
+}
+
+#hero .herocontent a {
+    font-family: var(--HEADING-FONT);
+    background-color: var(--BUTTON-COLOR);
+    color: var(--BODY-TEXT-COLOR);
+    padding: 1em 2em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#hero .herocontent a:hover {
+    background-color: var(--ACCENT-COLOR);
+}
+/** End of Hero Section **/

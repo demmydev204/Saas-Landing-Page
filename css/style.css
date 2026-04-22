@@ -38,6 +38,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .container {
@@ -59,7 +60,7 @@ h2 {
 
 /** Header Section **/
  #header {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -175,11 +176,6 @@ z-index: -1;
     
 }
 
-/* #header .brandlogo a img {
-    width: 80%;
-} */
-
-
 #header .cta a {
     font-family: var(--HEADING-FONT);
     color: white;
@@ -216,7 +212,7 @@ z-index: -1;
     width: 100%;
     height: 100%;
     background-color: #000000;
-    opacity: 0.85;
+    opacity: 0.75;
     z-index: -1;
 }
 
@@ -262,7 +258,7 @@ z-index: -1;
     grid-auto-columns: 1fr;
     grid-template-rows: auto; 
     gap: 20px; 
-     margin-top: 50px;
+     margin-top: 20px;
      padding-bottom: 60px;
 }
 
@@ -363,3 +359,293 @@ z-index: -1;
     padding-left: 30px;
 }
 /** End of Solution Section **/
+
+/** Features Section **/
+#features {
+    background-color: #e6f1ff;
+    padding: 20px;
+}
+
+#features .featuresblock {
+    padding-bottom: 30px;
+}
+
+#features .featurehead {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#features .featurehead p {
+    font-family: var(--BODY-FONT);
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+#features .featurelist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#features .featurecard {
+    background-image: url(/assets/low-angle\ having\ a\ membership\ in\ gym.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#features .featurecard:nth-child(2) {
+    background-image: url(/assets/athletic-man-practicing\ for\ bookings.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#features .featurecard:last-child {
+    background-image: url(/assets/two-athletic-smiling\ for\ client\ tracking.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#features .featurecard::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+
+#features .featurecard img {
+    width: 20px;
+    height: 20px;
+}
+
+#features .featurecard h3 {
+    color: white;
+    font-family: var(--HEADING-FONT);
+    font-weight: 600;
+    font-size: 1.56rem;
+}
+
+#features .featurecard p {
+    color: white;
+    font-family: var(--BODY-FONT);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#features .featurecard .card {
+    color: white;
+     background-color: var(--BUTTON-COLOR);
+    font-family: var(--HEADING-FONT);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+}
+
+#features .featurecard .card:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0px 2px 3px 3px var(--ACCENT-COLOR);
+}
+/** End of Features Section **/
+
+/** How it's Work Section **/
+
+#howitwork .howitsworks {
+    padding: 20px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+#howitwork .howitsworks h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+#howitwork .workitem {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+#howitwork .number {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+#howitwork .text h3 {
+    font-family: var(--HEADING-FONT);
+    font-size: 500;
+    font-size: 1.2rem;
+}
+
+#howitwork .text p {
+    font-family: var(--BODY-FONT);
+    font-size: 0.9rem;
+    font-weight: 400;
+    /* padding-left: 3px; */
+}
+
+#howitwork .workimage img {
+    border-radius: 20px;
+    margin-top: 30px;
+}
+/** End of How it's Work Section **/
+
+/** Why Choose Us Section **/
+#whychoose {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#whychoose .whyblock {
+    padding-bottom: 30px;
+}
+
+#whychoose .whyhead {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#whychoose .whyhead p {
+    font-family: var(--BODY-FONT);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 10px;
+    color: black;
+}
+
+#whychoose .whylist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+#whychoose .whycard {
+    background-image: url(/assets/handsome-man-working-laptop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#whychoose .whycard:nth-child(2) {
+    background-image: url(/assets/lisa-marie-theck-Jmt0oJmJSnbetter\ bookings.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#whychoose .whycard:last-child {
+    background-image: url(/assets/athletic-person-exercising-better\ experience.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#whychoose .whycard::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+
+#whychoose .whycard img {
+    width: 20px;
+    height: 20px;
+}
+
+#whychoose .whycard h3 {
+    color: white;
+    font-family: var(--HEADING-FONT);
+    font-weight: 600;
+    font-size: 1.56rem;
+}
+
+#whychoose .whycard p {
+    color: white;
+    font-family: var(--BODY-FONT);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#whychoose .whycard .card {
+    color: white;
+     background-color: var(--BUTTON-COLOR);
+    font-family: var(--HEADING-FONT);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+}
+
+#whychoose .whycard .card:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0px 2px 3px 3px var(--ACCENT-COLOR);
+}
+
+/** End of Why Choose Us Section **/

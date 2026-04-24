@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"> -->
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <link rel="icon" href="assets/veltrix_favicon__2.svg" type="image/x-icon">
     <meta name="author" content="Chuks Demmy">
     <meta name="description" content="This is a saas landing page for gym coaches">
@@ -23,10 +26,10 @@
                     <div class="navlist">
             <div class="mobilemenu"><div class="box"></div></div>
                         <ul>
-                            <li> <a href="#">Solution</a> </li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li> <a href="#solution">Solution</a> </li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#finalcta">Contact</a></li>
                         </ul>
                     </div>
                 <div class="cta">
@@ -47,7 +50,7 @@
                 <div class="herocontent">
                     <h1>Run Your Gym Smarter, Grow Faster With Our Software</h1>
                     <p>Manage memberships, bookings, payments, staff, and client progress, all in one simple platform built for modern fitness businesses.</p>
-                    <a href="#">Start Free Trial</a>
+                    <a href="#finalcta">Start Free Trial</a>
                 </div>
             </div>
         </section>
@@ -261,25 +264,124 @@
                             </div>
                     </div>
              </div>
-
+                </div>
                 </div>
             </div>
         </section>
         <!--End of Trusted Section-->
 
+        <!--Pricing Section-->
+        <section id="pricing">
+            <div class="pricings container">
+                <div class="pricingblock">
+                    <h2>Simple Pricing</h2>
+                    <p>Pick the plan that fits your gym.</p>
+
+                    <div class="pricingplan">
+                        <div class="priceitem">
+                            <h2>Starter</h2>
+                            <h3>$29</h3>
+                            <p>per month</p>
+                            <ul>
+                                <li>Up to 100 members</li>
+                                <li>Basic booking system</li>
+                                <li>Payment processing</li>
+                                <li>Basic reporting tools</li>
+                            </ul>
+                            <a href="#finalcta">
+                            <button type="button">Start free trial</button></a>
+                        </div>
+
+                        <div class="priceitem">
+                            <h2>Growth</h2>
+                            <h3>$79</h3>
+                            <p>per month</p>
+                            <ul>
+                                <li>Up to 500 members</li>
+                                <li>Full booking and scheduling</li>
+                                <li>Member progress tracking</li>
+                                <li>Staff management tools</li>
+                            </ul>
+                            <a href="#finalcta">
+                            <button type="button">Start free trial</button></a>
+                        </div>
+                        <div class="priceitem">
+                            <h2>Pro</h2>
+                            <h3>$199</h3>
+                            <p>per month</p>
+                            <ul>
+                                <li>Unlimited members</li>
+                                <li>Advanced analytics</li>
+                                <li>Priority support</li>
+                                <li>Custom integrations</li>
+                            </ul>
+                            <a href="#finalcta">
+                            <button type="button">Start free trial</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--End of Pricing Section-->
+
+        <!--CTA Section-->
+        <section id="finalcta">
+            <div class="final__cta container">
+                <div class="final__ctablock">
+                    <div class="finalcta__text">
+                        <h2>Ready to grow without chaos</h2>
+                        <p>Join fitness businesses saving time and increasing revenue.</p>
+                        <div class="form">
+                            <input type="text" name="text" placeholder="Enter your email">
+                            <button type="button">Get started</button>
+                        </div>
+                        <p class="terms">By signing up you agree to our Terms and Conditions.</p>
+                    </div>
+                    <div class="finalcta__image">
+                        <img src="/assets/handsome-man-exercising-gym.jpg" alt="This is the owner of the gym">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of CTA Section-->
 
     </main>
 <!--End of Main-->
 
 <!--Footer-->
     <footer>
+        <section id="footer">
+            <div class="footer container">
+               <div class="footercontent">
+                <div class="footbrand">
+                    <img src="/assets/Veltrix brandlogo.png" alt="veltrixbrandlogo">
+                    <p>A Place Where Strength and Community Grow Togther</p>
+                </div>
+                <div class="footlink">
+                    <h2>Company</h2>
+                    <a href="#solution">Solution</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#finalcta">Contact</a>
+                </div>
+                <div class="reachout">
+                    <h2>Reach Out</h2>
+                    <p>39 Division St, Dallas, Texas 234678, USA</p>
+                    <p>+1 567 789 3425</p>
+                    <p>info@veltrixcoach.com</p>
+                </div>
+                <p class="copy">Copyright &copy; 2026 Veltrix Gym</p>
+               </div> 
+            </div>
 
+        </section>
     </footer>
     <!--End of footer-->
 
-    <script src="js/saas.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
 
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/saas.js"></script>
 
     </body>
 </html>

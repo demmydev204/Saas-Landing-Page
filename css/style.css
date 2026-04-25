@@ -61,16 +61,18 @@ h2 {
 /** Header Section **/
  #header {
     position: sticky;
+     background-color: rgba(11, 22, 49, 0.893);
+
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
     z-index: 1000;
+    overflow: hidden;
 }
 
 #header .header {
     min-height: 8vh;
-    background-color: rgba(32, 31, 31, 0.24);
 }
 
 #header .navbar {
@@ -104,7 +106,7 @@ h2 {
 
 #header .navlist ul a {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.2rem;
     color: white;
     text-transform: capitalize;
@@ -1333,6 +1335,231 @@ z-index: -1;
 
 /** Desktop Device **/
 @media screen and (min-width: 1200px) {
+
+    /* Header Section **/
+
+    #header {
+            background-color: rgba(11, 22, 49, 0.893);
+
+    }
+  #header .brandlogo img {
+    width: 30%;
+  } 
+    #header .mobilemenu {
+        display: none;
+    }
     
+    #header .navlist {
+        width: 100%;
+        padding: 20px;
+    }
+    #header .navlist ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #header .navlist ul li {
+        display: inline-block;
+    }
+
+    #header .navlist ul li a {
+        font-size: 1.7rem;
+    }
+
+    /* End of Header Section **/
+
+    /** Hero Section **/
+    #hero .herocontent h1 {
+        font-size: 4rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #hero .herocontent p {
+        font-size: 1.8rem;
+    }
+
+    #hero .herocontent a {
+        font-size: 1.5rem;
+        margin-top: -20px;
+    }
+    /** End of Hero Section **/
+
+    /** Problem Section **/
+    #problem .problems {
+        margin-left: 40px;
+        gap: 10px;
+        margin-right: 40px;
+    }
+
+    #problem .propcard h2 {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    #problem .propcard p {
+        font-size: 1.5rem;
+    }
+
+    #problem .propcard ul {
+        font-size: 1.3rem;
+    }
+    /** End of Problem Section **/
+
+    /** Solution Section **/
+    #solution .solutions {
+        margin-left: 40px;
+        gap: 50px;
+    }
+
+    #solution .solutioncard h2 {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    #solution .solutioncard p {
+        font-size: 1.5rem;
+    }
+
+    #solution .solutioncard ul {
+        font-size: 1.3rem;
+    }
+    /** End of Solution Section **/
+
+    /** Features Section **/
+
+    #features .featurehead h2 {
+            font-size: 2.9rem;
+            margin: 0 auto;
+            width: 70%;
+        }
+
+    #features .featurehead p {
+            width: 100%
+        }
+
+    #features .featurelist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 20px;
+        gap: 60px;
+        margin: 30px;
+}
+
+    #features .featurecard h3 {
+        font-size: 1.9rem;
+        width: 70%;
+    }
+
+    #features .featurecard p {
+        font-size: 1.3rem;   
+    }
+    /** End of Features Section **/
+
+    /** How it works Section **/
+    #howitwork .howitsworks {
+        margin: 50px;
+    }
+    /** How it works Section  **/
+
+    /** why choose section **/
+    
+    #whychoose .whyhead h2 {
+            font-size: 2.9rem;
+        }
+
+    #whychoose .whyhead p {
+            font-size: 1.2rem;
+        }
+
+    #whychoose .whylist {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 20px;
+        gap: 10px;
+}
+
+    #whychoose .whycard {
+        margin: 20px;
+    }
+
+    #whychoose .whycard h3 {
+        font-size: 1.9rem;
+        width: 70%;
+    }
+
+    #whychoose .whycard p {
+        font-size: 1.3rem;   
+    }
+    /** End of why choose section **/
+
+    /** Trust Section **/
+
+     #trust .trustblock h2 {
+        font-size: 2.5rem;
+    }
+
+    #trust .testi__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+    }
+
+    #trust .trustitem {
+        box-shadow: 2px 0px 2px var(--HEADING-COLOR);
+    }
+    /** End of Trust Section **/
+
+    /** Pricing Section **/
+    #pricing .pricingblock h2 {
+        font-size: 2.7rem;
+    }
+
+    #pricing .pricingblock p {
+        font-size: 1.2rem;
+    }
+
+    #pricing .pricingplan {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        gap: 40px;
+}
+
+    /** CTa Section **/
+    #finalcta .final__ctablock {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    #finalcta .finalcta__image {
+        width: 50%;
+    }
+
+    #finalcta .finalcta__image img {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    #finalcta .finalcta__text {
+        padding: 50px;
+    }
+
+    #finalcta .finalcta__text h2 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        width: 80%;
+    }
+    /** End of CTa Section **/
 }
 /** End of Desktop Device **/

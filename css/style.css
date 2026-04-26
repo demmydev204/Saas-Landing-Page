@@ -61,14 +61,12 @@ h2 {
 /** Header Section **/
  #header {
     position: sticky;
-     background-color: rgba(11, 22, 49, 0.893);
-
+    background-color: rgba(11, 22, 49, 0.893);
     left: 0;
     top: 0;
     width: 100%;
     height: auto;
     z-index: 1000;
-    overflow: hidden;
 }
 
 #header .header {
@@ -1342,17 +1340,19 @@ z-index: -1;
             background-color: rgba(11, 22, 49, 0.893);
 
     }
+
   #header .brandlogo img {
     width: 30%;
   } 
+  
     #header .mobilemenu {
         display: none;
     }
-    
+ 
     #header .navlist {
         width: 100%;
         padding: 20px;
-    }
+    } 
     #header .navlist ul {
         position: initial;
         display: block;

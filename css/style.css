@@ -522,7 +522,7 @@ z-index: -1;
 
 /** Why Choose Us Section **/
 #whychoose {
-    background-color: #f2f2f2;
+    background-color: #e6f1ff;
     padding: 30px;
 }
 
@@ -1189,7 +1189,6 @@ z-index: -1;
          justify-content: center;
         align-items: center;
         column-gap: 30px;
-        margin: 0;
     }
 
     #solution .solutioncard img {

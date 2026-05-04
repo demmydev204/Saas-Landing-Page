@@ -250,6 +250,7 @@ z-index: -1;
 /** End of Hero Section **/
 
 /** Problem Section **/
+
 #problem .problems {
     display: flex;
     flex-flow: column;
@@ -1152,6 +1153,10 @@ z-index: -1;
     /** End of Hero Section **/
 
     /** Problem Section **/
+    #problem .problem {
+        min-height: 80vh;
+    }
+
     #problem .problems {
         display: flex;
         flex-direction: row;
@@ -1183,6 +1188,10 @@ z-index: -1;
     /** End of Problem Section **/
 
     /** Solution Section **/
+    #solution .solution {
+        min-height: 50vh;
+    }
+
     #solution .solutions {
         display: flex;
         flex-direction: row;
@@ -1354,6 +1363,11 @@ z-index: -1;
     /* End of Header Section **/
 
     /** Hero Section **/
+
+    #hero .hero {
+        min-height: 80vh;
+    }
+
     #hero .herocontent h1 {
         font-size: 4rem;
         width: 80%;
@@ -1371,6 +1385,10 @@ z-index: -1;
     /** End of Hero Section **/
 
     /** Problem Section **/
+    #problem .problem {
+        min-height: 80vh;
+    }
+
     #problem .problems {
         margin-left: 40px;
         gap: 10px;
@@ -1392,6 +1410,10 @@ z-index: -1;
     /** End of Problem Section **/
 
     /** Solution Section **/
+    #solution .solution {
+        min-height: 60vh;
+    }
+
     #solution .solutions {
         margin-left: 40px;
         gap: 50px;
@@ -1412,6 +1434,10 @@ z-index: -1;
     /** End of Solution Section **/
 
     /** Features Section **/
+
+    #features .features {
+        min-height: 80vh;
+    }
 
     #features .featurehead h2 {
             font-size: 2.9rem;
@@ -1450,6 +1476,11 @@ z-index: -1;
 
     /** why choose section **/
     
+    #whychoose .whychooseus {
+        min-height: 60vh;
+    }
+
+
     #whychoose .whyhead h2 {
             font-size: 2.9rem;
         }
@@ -1482,6 +1513,10 @@ z-index: -1;
 
     /** Trust Section **/
 
+    #trust .trusts {
+        min-height: 60vh;
+    }
+
      #trust .trustblock h2 {
         font-size: 2.5rem;
     }
@@ -1500,6 +1535,11 @@ z-index: -1;
     /** End of Trust Section **/
 
     /** Pricing Section **/
+
+    #pricing .pricings {
+        min-height: 60vh;
+    }
+
     #pricing .pricingblock h2 {
         font-size: 2.7rem;
     }
@@ -1517,6 +1557,10 @@ z-index: -1;
 }
 
     /** CTa Section **/
+
+    #finalcta .final__cta {
+        min-height: 60vh;
+    }
     #finalcta .final__ctablock {
         display: flex;
         justify-content: flex-start;

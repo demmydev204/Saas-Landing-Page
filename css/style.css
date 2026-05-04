@@ -216,6 +216,10 @@ z-index: -1;
     z-index: -1;
 }
 
+#hero .hero {
+    min-height: 60vh;
+}
+
 #hero .herocontent {
     text-align: center;
     color: var(--BODY-TEXT-COLOR);
@@ -250,7 +254,9 @@ z-index: -1;
 /** End of Hero Section **/
 
 /** Problem Section **/
-
+#problem .problem {
+    min-height: 80vh;
+}
 #problem .problems {
     display: flex;
     flex-flow: column;
@@ -300,7 +306,9 @@ z-index: -1;
 /** End of Problem Section **/
 
 /** Solution Section **/
-
+#solution .solution {
+    min-height: 70vh;
+}
 #solution .solutions {
     display: flex;
     flex-flow: column;
@@ -360,6 +368,10 @@ z-index: -1;
 /** End of Solution Section **/
 
 /** Features Section **/
+#features .features {
+    min-height: 70vh;
+}
+
 #features {
     background-color: #e6f1ff;
     padding: 20px;
@@ -522,6 +534,10 @@ z-index: -1;
 /** End of How it's Work Section **/
 
 /** Why Choose Us Section **/
+#whychoose .whychooseus {
+    min-height: 70vh;
+}
+
 #whychoose {
     background-color: #e6f1ff;
     padding: 30px;
@@ -639,6 +655,7 @@ z-index: -1;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    min-height: 70vh;
 }
 
 
@@ -722,6 +739,10 @@ z-index: -1;
 
 
 /** Pricing Section **/
+#pricing .pricings {
+    min-height: 70vh;
+}
+
  #pricing .pricingblock {
     padding: 20px;
  }
@@ -813,6 +834,10 @@ z-index: -1;
 /** End of Pricing Section **/
 
 /** Final CTA Section **/
+#finalcta .final__cta {
+    min-height: 70vh;
+}
+
 #finalcta .final__ctablock {
     border: 2px solid lightgray;
     border-radius: 20px;
@@ -881,6 +906,10 @@ z-index: -1;
     padding: 30px;
 }
 
+#footer .footer {
+    min-height: 70vh;
+}
+
 #footer .footbrand {
     text-align: center;
     padding-bottom: 20px;
@@ -933,6 +962,11 @@ z-index: -1;
 /** Mobile Landscape **/
 @media screen and (min-width: 480px) {
    /** Hero Section **/
+
+   #hero .hero {
+    min-height: 60vh;
+   }
+
     #hero .herocontent h1 {
         font-size: 2.8rem;
     }
@@ -950,6 +984,11 @@ z-index: -1;
     /** End of Hero Section **/
 
     /** Problem Section **/
+
+    #problem .problem {
+        min-height: 80vh;
+    }
+
     #problem .propcard h2 {
         font-size: 2.3rem;
         padding-right: 100px;
@@ -1103,6 +1142,10 @@ z-index: -1;
     /** End of Cta Section **/
 
     /** Footer Section **/ 
+
+    #footer .footer {
+        min-height: 50vh;
+    }
     #footer .footbrand img {
         width: 80%;
         text-align: center;
